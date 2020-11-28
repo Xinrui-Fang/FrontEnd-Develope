@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Background Size Change on Scroll</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="header"></div>
+	<section>
+		<h2>Background Size Change into Small when Scrolling</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vulputate odio justo, vitae viverra nisi auctor et. Suspendisse vitae sagittis ligula. Sed cursus nunc non diam eleifend, vel suscipit nisl malesuada. Aenean et sapien mattis, venenatis nisi dignissim, fringilla eros. Sed pharetra sem nec condimentum suscipit. Pellentesque fermentum lacus eget quam consectetur, ac rutrum justo fermentum. Praesent vel finibus orci. Donec non tristique ante. In leo urna, pretium ac facilisis id, malesuada gravida felis. Integer fermentum ut diam ut dignissim. Nam vehicula eu mi eget bibendum. Donec tortor sem, cursus eget nisl id, euismod tempus erat. Donec ullamcorper leo sem, eu aliquet velit semper eget. Integer feugiat vel elit eget auctor. Curabitur consequat a quam nec rutrum.<br><br>
+
+Donec malesuada felis velit, nec auctor augue tempus nec. Aliquam aliquet gravida ex nec mattis. Nullam id leo ex. Suspendisse dictum malesuada felis. Donec vestibulum non ante a rutrum. Suspendisse sed ante vel quam ornare mattis. Vestibulum eget purus in odio fermentum consectetur a quis purus.<br><br>
+
+Pellentesque lacinia eros vel nisi mattis aliquam. Praesent id iaculis augue. In malesuada tincidunt erat, a finibus lorem vulputate tristique. Quisque leo lacus, viverra eget dapibus condimentum, maximus non felis. Nunc condimentum lectus venenatis ultricies finibus. Etiam vulputate semper erat, molestie porta elit varius ut. Donec nec fringilla turpis. In diam libero, convallis id pulvinar sed, finibus vitae massa. Suspendisse mauris turpis, iaculis sit amet ultrices ac, ultricies ut lectus.<br><br>
+
+Cras interdum a sapien non lobortis. Donec eget tincidunt metus. Sed vitae eros orci. Sed eget lacus nec metus cursus imperdiet sit amet at sapien. Donec sed tellus lorem. Nulla massa magna, blandit nec dolor luctus, sodales iaculis lectus. Suspendisse eu ante malesuada, eleifend odio eget, varius quam.<br><br>
+
+Donec faucibus suscipit libero, sed aliquam erat ultricies ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras semper ornare scelerisque. Mauris varius vel metus vel ullamcorper. Duis feugiat sodales pellentesque. Cras eu iaculis leo. Sed venenatis ante accumsan, maximus felis non, dictum arcu. Integer tempus sem sed magna eleifend, nec dictum libero feugiat. Aenean pretium euismod sodales. Maecenas sed varius mi. Praesent et metus ut diam lacinia egestas. Suspendisse potenti.</p>
+	</section>
+	<script type="text/javascript">
+		const bg = document.getElementById('header');
+		window.addEventListener('scroll', function(){
+			bg.style.backgroundSize = 160- window.pageYOffset/20 +'%';
+			bg.style.opacity = 1- window.pageYOffset/700 +'';
+		})
+	</script>
+</body>
+</html>
